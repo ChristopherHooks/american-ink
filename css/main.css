@@ -119,13 +119,14 @@ body {
 }
 
 header {
-    background: url('../img/skyline.jpg'), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
+    background: url("../img/skyline.jpg"),
+        linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     text-align: center;
     color: white;
     padding-bottom: 1rem;
@@ -168,6 +169,16 @@ nav li {
     margin-right: 10px;
 }
 
+a:visited {
+    color: lightblue;
+    text-decoration: none;
+    /* TODO fix text underline */
+}
+
+a:target {
+    color: pink;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -177,7 +188,7 @@ main {
 
 .bio {
     background-color: white;
-    font-family: 'karma';
+    font-family: "karma";
     font-size: 1rem;
     text-align: center;
     margin: 1rem 3rem 0 3rem;
@@ -213,7 +224,7 @@ main {
 }
 
 .item {
-    height: 200px;
+    height: 500px;
 }
 
 .one {
@@ -244,7 +255,7 @@ footer {
     background-color: black;
     text-align: center;
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
 }
 
 .border {
@@ -349,9 +360,9 @@ footer {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 

@@ -27,14 +27,18 @@
                 <h1 class="name">American Ink</h1>
                 <h4 class="tag">Est 2017</h4>
                 <nav>
-                    <li>Home</li>
-                    <li>Artists</li>
+                    <li>
+                        <a href="#top">Home</a>
+                    </li>
+                    <li>
+                        <a href="#artists">Artists</a>
+                    </li>
                     <li>Contact</li>
                     <li>Products</li>
                 </nav>
             </header>
             <main>
-                <section class="bio">
+                <section class="bio" id="bio">
                     <p>American Ink Tattoo Company and Supply was founded in 2017. The shop was formerly Heart and Soul Tattoo
                         Studio founded in 2011 by resident artist George Boogyd Dungan. It quickly became very successful
                         studio right in the heart of OKC.</p>
@@ -48,7 +52,7 @@
 
 
 
-                    <div class="artists">
+                    <div class="artists" id="artists">
 
                         <h2>Artists</h2>
 
@@ -93,30 +97,31 @@
                         <p>Tony B is a Oklahoma Native who starting tattooing after his service in the Army. He is award winning,
                             has been tattooing for 14years and skilled in all styles. </p>
 
-                        <div class="auto-play" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                        <!-- <div class="auto-play" style="max-width: 1000px; margin-left: auto; margin-right: auto;">
                             <div class="item one"></div>
                             <div class="item two"></div>
                             <div class="item three"></div>
                             <div class="item four"></div>
                             <div class="item five"></div>
                             <div class="item six"></div>
-                        </div>
-
+                        </div> -->
 
                         <h3>Roberto Escobar</h3>
-                        <p>Apprentice tattooer.</p>
+                        <p>Apprentice tattooer</p>
 
                     </div>
                 </section>
 
             </main>
 
+            <footer>
+                <p>&copy;American Ink 2018</p>
+            </footer>
+            
         </div>
 
 
-        <footer>
-            <p>&copy;American Ink 2018</p>
-        </footer>
+        
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -148,10 +153,11 @@
             $(document).ready(function () {
                 $('.auto-play').slick({
                     arrows: true,
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
+                    infite: true
                 });
             });
 

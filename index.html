@@ -12,6 +12,7 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
+
         <link rel="stylesheet" type="text/css" href="slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
         <link rel="stylesheet" href="css/main.css">
@@ -33,7 +34,7 @@
                 </nav>
             </header>
             <main>
-                <section class="bio border">
+                <section class="bio">
                     <p>American Ink Tattoo Company and Supply was founded in 2017. The shop was formerly Heart and Soul Tattoo
                         Studio founded in 2011 by resident artist George Boogyd Dungan. It quickly became very successful
                         studio right in the heart of OKC.</p>
@@ -44,58 +45,78 @@
                     <p>Lisa McGuinness, a local professional in the music industry, was ready for a change in life. She purchased
                         the studio in 2016 and kept the name Heart and Soul for about a year. The shop then relocated, and
                         merged with a tattoo supply company also owned by McGuinness.</p>
-                </section>
-                <div class="artists">
-                    <h2>Artists</h2>
 
-                    <section>
+
+
+                    <div class="artists">
+
+                        <h2>Artists</h2>
+
                         <p>For a year now we have been growing as a family and making tattoo dreams come true daily. We have
                             6 artists in house. </p>
+
                         <h3>George Boogyd Dungan</h3>
                         <p>17 years experience</p>
+                        <p>
+                            <em>"Be inspired by everything."</em>
+                        </p>
+
+                        <p> This is me, Boogy D. I'm a local tattoo artist in Oklahoma City, Oklahoma. I have been tattooing
+                            for about 17 years. I am a state licensed tattoo artist, and have been creating art my whole
+                            life. My style has been influenced by everyday living and from my fellow peers and artists worldwide.
+                            I have worked all over Oklahoma City and tour around America in the tattoo convention scene.</p>
+
+                        <p>I am into creating something personal for my customers. I have a variety of styles, ranging from
+                            black and grey, to traditional, realism, horror, cartoon, alternative, skateboard and religious
+                            themes. I love keeping with my customer's vision and idea for their tattoo, while presenting
+                            them in a way that compliments the skin so the idea can come to life. I am always up for a challenge
+                            and try to be very informed on culture and custom creative tattoo styles. Thank you for visiting
+                            our site, and I look forward to tattooing whatever your heart desires soon!</p>
+
                         <h3>Marv Stanfill</h3>
                         <p>11 years experience</p>
+                        <p>Rerum qui voluptatem et dicta quis quia. Qui sit delectus quisquam ut qui pariatur nostrum sunt.
+                            Aut ut temporibus ullam. Omnis optio aperiam harum porro. Fugit et placeat. Eum deleniti voluptatem
+                            et aut aperiam ea consequatur molestias dolore.</p>
+
                         <h3>Eddy Gibb</h3>
                         <p>10 years</p>
+                        <p>Provident ut similique. Optio porro maxime a alias sit enim omnis ut rem. Nisi et assumenda repellat
+                            non repellat. A unde et itaque.</p>
+
                         <h3>Joshua Smith</h3>
                         <p>5 years</p>
+                        <p>Quo corrupti est. Nulla cumque et repellendus corrupti quidem ex. Est molestias maxime eum qui dolor.
+                            Cumque est incidunt tenetur voluptatum ducimus molestias amet quo enim.</p>
+
                         <h3>Tony Beasley</h3>
                         <p>Tony B is a Oklahoma Native who starting tattooing after his service in the Army. He is award winning,
                             has been tattooing for 14years and skilled in all styles. </p>
-                        <div class="auto-play">
-                            <div>
-                                <img src="img/tony-b/beauty.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/tony-b/biomech.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/tony-b/hex-skull.jpg" alt="">
-                            </div>
+
+                        <div class="auto-play" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                            <div class="item one"></div>
+                            <div class="item two"></div>
+                            <div class="item three"></div>
+                            <div class="item four"></div>
+                            <div class="item five"></div>
+                            <div class="item six"></div>
                         </div>
+
+
                         <h3>Roberto Escobar</h3>
                         <p>Apprentice tattooer.</p>
-                    </section>
-                </div>
+
+                    </div>
+                </section>
 
             </main>
-            <aside>
 
-            </aside>
-            <footer>
-                <p>&copy;American Ink 2018</p>
-            </footer>
         </div>
 
 
-
-
-
-
-
-
-
-
+        <footer>
+            <p>&copy;American Ink 2018</p>
+        </footer>
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -108,8 +129,8 @@
         <script src="js/plugins.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
@@ -122,7 +143,19 @@
             ga('send', 'pageview')
 
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <!-- <script type="text/javascript"src="slick/slick.js"></script> -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.auto-play').slick({
+                    arrows: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+
+        </script>
     </body>
 
 </html>

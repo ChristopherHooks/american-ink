@@ -96,6 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 * {
     box-sizing: border-box;
 }
@@ -118,10 +119,9 @@ body {
 }
 
 header {
-    background: url('../img/skyline.jpg'),
-              linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
-    background-blend-mode: multiply;    
-    background-size: cover;   
+    background: url('../img/skyline.jpg'), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
+    background-blend-mode: multiply;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -186,23 +186,58 @@ main {
     grid-row-end: 3;
 }
 
-.artists{
+/* .artists {
     background-color: white;
     font-family: 'karma';
     width: 80%;
     text-align: center;
     margin: 0 auto 0 auto;
     grid-row: 3 / 4;
-}
+} */
 
 .artists h3,
 .artists h2 {
     font-family: "Kaushan", cursive;
 }
+
 .slides {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+}
+
+.slick-slide {
+    width: 230px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.item {
+    height: 200px;
+}
+
+.one {
+    background-image: url("../img/tony-b/beauty.jpg");
+}
+
+.two {
+    background-image: url("../img/tony-b/biomech.jpg");
+}
+
+.three {
+    background-image: url("../img/tony-b/hex-skull.jpg");
+}
+
+.four {
+    background-image: url("../img/tony-b/owl.jpg");
+}
+
+.five {
+    background-image: url("../img/tony-b/shining.jpg");
+}
+
+.six {
+    background-image: url("../img/tony-b/snail.jpg");
 }
 
 footer {
@@ -212,19 +247,9 @@ footer {
     font-family: 'Kaushan Script', cursive;
 }
 
-
 .border {
     border: 1px solid red;
 }
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -258,7 +283,8 @@ footer {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -302,8 +328,10 @@ footer {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -321,9 +349,9 @@ footer {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -338,35 +366,30 @@ footer {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -375,28 +398,23 @@ footer {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;

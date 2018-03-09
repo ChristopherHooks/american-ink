@@ -109,6 +109,10 @@ body {
     background-repeat: repeat-y;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -116,6 +120,9 @@ body {
     height: 100vh;
     margin: auto;
     max-width: 1200px;
+    color: lightgray;
+    font-family: "karma";
+    font-size: 0.9rem;
 }
 
 header {
@@ -125,16 +132,15 @@ header {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: "Kaushan Script", cursive;
     text-align: center;
-    color: white;
-    padding-bottom: 1rem;
+    color: whitesmoke;
+    padding-bottom: 0.75rem;
 }
 
-.banner {
-    width: 100%;
-    margin-bottom: 0;
+.name {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .logo {
@@ -143,36 +149,31 @@ header {
     border-radius: 50%;
     border: solid black 2px;
     background-color: royalblue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-.name {
-    margin-top: 0px;
-    margin-bottom: 0;
+    margin: 0 auto 0.5rem auto;
 }
 
 .tag {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav {
-    display: inline-block;
-    margin-top: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav li {
-    display: inline;
-    margin-right: 10px;
+    font-size: 1.1rem;
+    border: solid black 2px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(20, 200, 255, 0.3);
 }
 
 a:visited {
-    color: lightblue;
+    color: lightgreen;
     text-decoration: none;
-    /* TODO fix text underline */
 }
 
 a:target {
@@ -182,29 +183,25 @@ a:target {
 main {
     display: flex;
     flex-wrap: wrap;
-    color: black;
-    padding: 10px;
+    /*     color: white; */
 }
 
 .bio {
-    background-color: white;
-    font-family: "karma";
-    font-size: 1rem;
     text-align: center;
-    margin: 1rem 3rem 0 3rem;
+    margin-left: 0;
+    margin-right: 0;
     padding: 1rem;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-color: black;
 }
 
-/* .artists {
-    background-color: white;
-    font-family: 'karma';
-    width: 80%;
+.artists {
+    background-color: black;
     text-align: center;
-    margin: 0 auto 0 auto;
-    grid-row: 3 / 4;
-} */
+    padding: 1rem;
+    margin-top: 10px;
+}
 
 .artists h3,
 .artists h2 {
@@ -254,7 +251,7 @@ main {
 footer {
     background-color: black;
     text-align: center;
-    color: white;
+    color: lightgray;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -357,6 +354,10 @@ footer {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (min-width: 650px) {
+    
 }
 
 @media print,

@@ -109,7 +109,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: repeat-y;
-    font-family: "karma";
+    font-family: 'karma';
     color: lightgray;
     height: 100vh;
 }
@@ -136,8 +136,7 @@ a {
 }
 
 header {
-    background: url("../img/skyline.jpg"),
-        linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
+    background: url("../img/skyline.jpg"), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
@@ -145,7 +144,6 @@ header {
     font-family: "Kaushan Script", cursive;
     text-align: center;
     color: whitesmoke;
-    /*     padding-bottom: 1rem; */
     padding-top: 1.5rem;
 }
 
@@ -156,7 +154,7 @@ header {
 .name {
     margin-bottom: 0.5rem;
     margin-top: 1rem;
-    font-family: "Kaushan Script";
+    font-family: 'Kaushan Script';
     color: lightgray;
 }
 
@@ -179,10 +177,10 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: "Kaushan Script";
-    font-family: "karma";
+    font-family: 'Kaushan Script';
+    font-family: 'karma';
     background-blend-mode: multiply;
-    padding-bottom: 0.8em;
+    padding-bottom: .8em;
 }
 
 nav li {
@@ -192,7 +190,7 @@ nav li {
 }
 
 a:visited {
-    color: lightgreen;
+    color: lightseagreen;
     text-decoration: none;
 }
 
@@ -210,6 +208,7 @@ main {
     text-align: center;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 1rem;
     padding: 1rem;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -220,12 +219,15 @@ main {
     background-color: black;
     text-align: center;
     padding: 1rem;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .artists h3,
-.artists h2 {
+.artists h2,
+.contact h2,
+.contact h3 {
     font-family: "Kaushan", cursive;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
 }
 
@@ -267,6 +269,70 @@ main {
 
 .six {
     background-image: url("../img/tony-b/snail.jpg");
+}
+
+.contact {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact label {
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.contact input {
+    margin-left: 3rem;
+}
+
+#message {
+    height: 6rem;
+    margin-bottom: 1rem;
+    background-color: lightgray;
+    border: none;
+    border-radius: 2px;
+    width: 50%;
+}
+
+#name {
+    background-color: lightgray;
+    border: none;
+    border-radius: 2px;
+    height: 2rem;
+    width: 50%
+}
+
+#email {
+    background-color: lightgray;
+    border: none;
+    border-radius: 2px;
+    height: 2rem;
+    width: 50%
+}
+
+#telNo {
+    background-color: lightgray;
+    border: none;
+    border-radius: 2px;
+    height: 2rem;
+    width: 50%
+}
+
+#subject {
+    background-color: lightgray;
+    border: none;
+    border-radius: 2px;
+    height: 2rem;
+    width: 50%
 }
 
 footer {
@@ -413,7 +479,7 @@ footer {
         margin-left: 3rem;
     }
     nav {
-        margin-right: 2rem;
+        margin-right: 2rem
     }
     .logo {
         width: 250px;
@@ -435,9 +501,9 @@ footer {
 }
 
 @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 

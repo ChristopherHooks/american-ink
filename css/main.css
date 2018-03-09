@@ -109,7 +109,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: repeat-y;
-    font-family: 'karma';
+    font-family: "karma";
     color: lightgray;
     height: 100vh;
 }
@@ -136,7 +136,8 @@ a {
 }
 
 header {
-    background: url("../img/skyline.jpg"), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
+    background: url("../img/skyline.jpg"),
+        linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
@@ -154,7 +155,7 @@ header {
 .name {
     margin-bottom: 0.5rem;
     margin-top: 1rem;
-    font-family: 'Kaushan Script';
+    font-family: "Kaushan Script";
     color: lightgray;
 }
 
@@ -177,10 +178,10 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Kaushan Script';
-    font-family: 'karma';
+    font-family: "Kaushan Script";
+    font-family: "karma";
     background-blend-mode: multiply;
-    padding-bottom: .8em;
+    padding-bottom: 0.8em;
 }
 
 nav li {
@@ -229,6 +230,19 @@ main {
     font-family: "Kaushan", cursive;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
+}
+
+.tenure,
+.social {
+    display: inline-block;
+}
+
+.tenure {
+    margin-right: 1rem;
+}
+
+.fb {
+    margin-right: 0.3rem;
 }
 
 .slides {
@@ -286,8 +300,8 @@ main {
 .contact label {
     display: block;
     margin-left: 2rem;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .contact input {
@@ -308,7 +322,7 @@ main {
     border: none;
     border-radius: 2px;
     height: 2rem;
-    width: 50%
+    width: 50%;
 }
 
 #email {
@@ -316,7 +330,7 @@ main {
     border: none;
     border-radius: 2px;
     height: 2rem;
-    width: 50%
+    width: 50%;
 }
 
 #telNo {
@@ -324,7 +338,7 @@ main {
     border: none;
     border-radius: 2px;
     height: 2rem;
-    width: 50%
+    width: 50%;
 }
 
 #subject {
@@ -332,7 +346,7 @@ main {
     border: none;
     border-radius: 2px;
     height: 2rem;
-    width: 50%
+    width: 50%;
 }
 
 footer {
@@ -479,7 +493,7 @@ footer {
         margin-left: 3rem;
     }
     nav {
-        margin-right: 2rem
+        margin-right: 2rem;
     }
     .logo {
         width: 250px;
@@ -501,9 +515,9 @@ footer {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 

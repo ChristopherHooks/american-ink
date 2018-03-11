@@ -114,7 +114,7 @@ body {
     height: 100vh;
 }
 
-.row {
+.navbar {
     flex-direction: column;
     text-align: center;
 }
@@ -186,8 +186,8 @@ nav {
 
 nav li {
     font-size: 1.3rem;
-    border-radius: 8px;
     padding: 10px;
+    border: none;
 }
 
 a:visited {
@@ -195,6 +195,9 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: pink;
+}
 a:target {
     color: pink;
 }
@@ -202,7 +205,6 @@ a:target {
 main {
     display: flex;
     flex-wrap: wrap;
-    /*     color: white; */
 }
 
 .bio {
@@ -223,89 +225,73 @@ main {
     margin-top: 1rem;
 }
 
-.artists h3,
-.artists h2,
-.contact h2,
-.contact h3 {
+h2,
+h3 {
     font-family: "Kaushan", cursive;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
 }
 
-.tenure,
-.social {
-    display: inline-block;
-}
-
-.tenure {
-    margin-right: 1rem;
-}
-
-.fb {
-    margin-right: 0.3rem;
-}
-
-.slides {
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-}
-
-.slick-slide {
-    width: 230px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.item {
-    height: 500px;
-}
-
-.one {
-    background-image: url("../img/tony-b/beauty.jpg");
-}
-
-.two {
-    background-image: url("../img/tony-b/biomech.jpg");
-}
-
-.three {
-    background-image: url("../img/tony-b/hex-skull.jpg");
-}
-
-.four {
-    background-image: url("../img/tony-b/owl.jpg");
-}
-
-.five {
-    background-image: url("../img/tony-b/shining.jpg");
-}
-
-.six {
-    background-image: url("../img/tony-b/snail.jpg");
-}
-
-.contact {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
     width: 100%;
-    margin-top: 1rem;
+    padding: 0;
+    margin: 0 auto 0 auto;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
 }
 
 .contact h2 {
     text-align: center;
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+.shop-info {
+    text-align: center;
+}
+
 .contact label {
     display: block;
-    margin-left: 2rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    text-align: center;
 }
 
 .contact input {
-    margin-left: 3rem;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
 }
 
 #message {
@@ -321,7 +307,7 @@ main {
     background-color: lightgray;
     border: none;
     border-radius: 2px;
-    height: 2rem;
+
     width: 50%;
 }
 
@@ -329,7 +315,7 @@ main {
     background-color: lightgray;
     border: none;
     border-radius: 2px;
-    height: 2rem;
+
     width: 50%;
 }
 
@@ -337,8 +323,6 @@ main {
     background-color: lightgray;
     border: none;
     border-radius: 2px;
-    height: 2rem;
-    width: 50%;
 }
 
 #subject {

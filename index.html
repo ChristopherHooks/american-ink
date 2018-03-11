@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <div class='row'>
+        <div class='navbar' id="sticker">
             <h1 class="name shadow">American Ink</h1>
             <nav class="shadow">
                 <li>
@@ -28,7 +28,9 @@
                 <li>
                     <a href="#artists">Artists</a>
                 </li>
-                <li>Contact</li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
                 <li>Products</li>
             </nav>
         </div>
@@ -137,6 +139,39 @@
                     <p>I enjoy doing all styles of tattooing, whether it's traditional, new school, realism, trash polka, or
                         abstract, and I always look forward to the challenge of covering up unwanted tattoos!</p>
 
+                    <ul class="rslides">
+                        <li>
+                            <img src="img/eddie/eddie.jpg" alt="photo of Eddie Gib">
+                        </li>
+                        <li>
+                            <img src="img/eddie/prayer-hands.jpg" alt="praying hands tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/clock.jpg" alt="clock and roses tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/crow-cover-up.jpg" alt="crow cover up tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/flowers.jpg" alt="tattoo of flowers">
+                        </li>
+                        <li>
+                            <img src="img/eddie/boxer.jpg" alt="tattoo of boxer">
+                        </li>
+                        <li>
+                            <img src="img/eddie/butterfly.jpg" alt="butterfly tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/crow-sleeve.jpg" alt="crow sleeve tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/tiger.jpg" alt="tiger tattoo">
+                        </li>
+                        <li>
+                            <img src="img/eddie/rose.jpg" alt="rose vampire painting">
+                        </li>
+                    </ul>
+
                     <h3>Joshua Smith</h3>
                     <div class="artist-info">
                         <div class="tenure">
@@ -171,14 +206,29 @@
                     <p>Tony B is a Oklahoma Native who starting tattooing after his service in the Army. He is award winning,
                         has been tattooing for 14years and skilled in all styles. </p>
 
-                    <!-- <div class="auto-play" style="max-width: 1000px; margin-left: auto; margin-right: auto;">
-                            <div class="item one"></div>
-                            <div class="item two"></div>
-                            <div class="item three"></div>
-                            <div class="item four"></div>
-                            <div class="item five"></div>
-                            <div class="item six"></div>
-                        </div> -->
+                    <ul class="rslides">
+                        <li>
+                            <img src="img/tony-b/hex-skull.jpg" alt="geometric skull tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/biomech.jpg" alt="biomechanical tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/shining.jpg" alt="the shining tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/beauty.jpg" alt="beauty and the beast tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/biomech2.jpg" alt="biomechanical tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/owl.jpg" alt="owl tattoo">
+                        </li>
+                        <li>
+                            <img src="img/tony-b/snail.jpg" alt="snail tattoo">
+                        </li>
+                    </ul>
 
                     <h3>Roberto Escobar</h3>
                     <div class="artist-info">
@@ -198,27 +248,38 @@
                 </div>
             </section>
 
-            <section class="contact">
-                <form action="index.html" method="post">
-                    <legend>
-                        <h2>Contact Us</h2>
-                    </legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" placeholder="Enter name...">
+            <div class="information">
+                <div class="shop-info">
+                    <h2>Address</h2>
+                    <p>3005 N May Ave, Oklahoma City, OK 73107</p>
+                    <h2>Hours</h2>
+                    <p>Mon-Fri</p>
+                    <p>10:00am to 10:00pm</p>
+                    <h2>Email</h2>
+                    <p>animalsinkstop@yahoo.com</p>
+                </div>
+                <div class="contact" id="contact">
+                    <form action="index.html" method="post">
+                        <legend>
+                            <h2>Contact Us</h2>
+                        </legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Enter name...">
 
-                    <label for="mail">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email...">
+                        <label for="mail">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email...">
 
-                    <label for="telNo">Phone number:</label>
-                    <input id="telNo" name="telNo" type="tel" placeholder="xxx-xxx-xxxx">
+                        <label for="telNo">Phone:</label>
+                        <input id="telNo" name="telNo" type="tel" placeholder="xxx-xxx-xxxx">
 
-                    <label for="subject">Subect:</label>
-                    <input type="text" name="subject" id="subject">
+                        <label for="subject">Subect:</label>
+                        <input type="text" name="subject" id="subject">
 
-                    <label for="message">Message:</label>
-                    <input type="textarea" name="message" id="message">
-                </form>
-            </section>
+                        <label for="message">Message:</label>
+                        <input type="textarea" name="message" id="message">
+                    </form>
+                </div>
+            </div>
 
         </main>
 
@@ -243,7 +304,9 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="js/main.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/responsiveslides.js"></script>
+        <script type="text/javascript" src="js/garand-sticky-73b0fbe/jquery.sticky.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
@@ -257,19 +320,7 @@
 
         </script>
         <!-- <script type="text/javascript"src="slick/slick.js"></script> -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.auto-play').slick({
-                    arrows: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    infite: true,
-                });
-            });
-
-        </script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 
 </html>

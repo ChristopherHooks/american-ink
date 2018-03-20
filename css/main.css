@@ -273,7 +273,8 @@ h3 {
 
 .information {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     background-color: black;
     margin-top: 1rem;
@@ -281,6 +282,15 @@ h3 {
 
 .shop-info {
     text-align: center;
+    flex-grow: 1;
+    min-width: 340px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    flex-grow: 2;
 }
 
 .contact label {
@@ -293,44 +303,16 @@ h3 {
 .contact input {
     text-align: center;
     height: 2rem;
-    width: 50%;
+    width: 90%;
+    border: none;
+    border-radius: 2px;
+    background-color: lightgray;
+    margin-left: 2rem;
 }
 
 #message {
     height: 6rem;
     margin-bottom: 1rem;
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
-    width: 50%;
-}
-
-#name {
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
-    width: 50%;
-}
-
-#email {
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
-    width: 50%;
-}
-
-#telNo {
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
-}
-
-#subject {
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
-    height: 2rem;
-    width: 50%;
 }
 
 footer {
@@ -470,103 +452,100 @@ footer {
         width: 200px;
         height: 200px;
     }
-}
-
-@media (min-width: 850px) {
-    .name {
-        margin-left: 3rem;
+    .contact input {
+        margin-left: 1rem;
     }
-    nav {
-        margin-right: 2rem;
+    @media (min-width: 850px) {
+        .name {
+            margin-left: 3rem;
+        }
+        nav {
+            margin-right: 2rem;
+        }
+        .logo {
+            width: 250px;
+            height: 250px;
+        }
     }
-    .logo {
-        width: 250px;
-        height: 250px;
+    @media (min-width: 1100px) {
+        .name {
+            margin-left: 6rem;
+        }
+        nav {
+            margin-right: 4rem;
+        }
+        .logo {
+            width: 300px;
+            height: 300px;
+        }
     }
-}
-
-@media (min-width: 1100px) {
-    .name {
-        margin-left: 6rem;
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
     }
-    nav {
-        margin-right: 4rem;
-    }
-    .logo {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
+    /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
+    @media print {
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-    /*
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+        /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    /*
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+        pre {
+            white-space: pre-wrap !important;
+        }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+        /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-    thead {
-        display: table-header-group;
+        thead {
+            display: table-header-group;
+        }
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
     }
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}

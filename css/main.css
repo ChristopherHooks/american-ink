@@ -137,7 +137,7 @@ a {
 }
 
 header {
-    background: url("../img/skyline.jpg"), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
+    background: url("../img/store-front-10.JPG"), linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7);
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
